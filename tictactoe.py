@@ -97,14 +97,6 @@ def minimax(board, player):
 
     return best_score
 
-def cpu_play(board):
-    """
-    CPU makes a move.
-    """
-    move = get_best_move("".join(board), "O")
-    board[move] = "O"
-    return board
-
 def print_game_over(winner):
     if winner == "Tie":
         print("Game over! It's a tie.")
